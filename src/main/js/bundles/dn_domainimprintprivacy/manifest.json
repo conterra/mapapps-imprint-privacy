@@ -1,0 +1,116 @@
+{
+    "name": "dn_domainimprintprivacy",
+    "version": "1.0.0-SNAPSHOT",
+    "title": "${bundleName}",
+    "description": "${bundleDescription}",
+    "vendor": "con terra GmbH",
+    "keywords": [
+        "sample"
+    ],
+    "icon": {},
+    "license": {},
+    "productName": "devnet-mapapps-domain-imprint-privacy",
+    "CSS-Themes-Extension": [
+        {
+            "name": "*",
+            "files": [
+                "./css/styles.css"
+            ]
+        }
+    ],
+    "components": [
+        {
+            "name": "ImprintTool",
+            "impl": "ct/tools/Tool",
+            "provides": [
+                "ct.tools.Tool"
+            ],
+            "propertiesConstructor": true,
+            "properties": {
+                "id": "imprintTool",
+                "title": "${imprint}",
+                "tooltip": "${imprint}",
+                "toolRole": "toolset",
+                "togglable": false,
+                "iconClass": "",
+                "clickHandler": "openImprint"
+            },
+            "references": [
+                {
+                    "name": "handlerScope",
+                    "providing": "dn_domainimprintprivacy.ToolHandler"
+                }
+            ]
+        },
+        {
+            "name": "PrivacyStatementsTool",
+            "impl": "ct/tools/Tool",
+            "provides": [
+                "ct.tools.Tool"
+            ],
+            "propertiesConstructor": true,
+            "properties": {
+                "id": "privacyStatementsTool",
+                "title": "${privacyStatements}",
+                "tooltip": "${privacyStatements}",
+                "toolRole": "toolset",
+                "togglable": false,
+                "iconClass": "",
+                "clickHandler": "openPrivacyStatements"
+            },
+            "references": [
+                {
+                    "name": "handlerScope",
+                    "providing": "dn_domainimprintprivacy.ToolHandler"
+                }
+            ]
+        },
+        {
+            "name": "ToolHandler",
+            "provides": [
+                "dn_domainimprintprivacy.ToolHandler"
+            ],
+            "properties": {
+                "imprintUrls": [
+                    {
+                        "locale": "de",
+                        "url": "https://www.conterra.de/de/formales/formales/impressum"
+                    },
+                    {
+                        "locale": "en",
+                        "url": "https://www.conterra.de/en/formales/formales/impressum"
+                    }
+                ],
+                "privacyUrls": [
+                    {
+                        "locale": "de",
+                        "url": "https://www.conterra.de/de/formales/formales/datenschutzerklaerung"
+                    },
+                    {
+                        "locale": "en",
+                        "url": "https://www.conterra.de/en/formales/formales/datenschutzerklaerung"
+                    }
+                ],
+                "toolsetDefinition": {
+                    "id": "imprintprivacyToolset",
+                    "tools": [
+                        "imprintTool",
+                        "privacyStatementsTool"
+                    ],
+                    "registerWidget": {
+                        "widgetRole": "footer_right"
+                    },
+                    "container": "ignore",
+                    "windowType": "container",
+                    "cssClass": "showToolLabels"
+                }
+            },
+            "references": [
+                {
+                    "name": "_toolsetManager",
+                    "providing": "toolset.Toolsetmanager"
+                }
+            ]
+        }
+    ]
+}
