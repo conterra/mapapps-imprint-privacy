@@ -1,7 +1,4 @@
-.ctAppRoot .imprintprivacyToolset .ctTool_imprintTool .dijitButtonText {
-    font-size: initial;
-}
-
+.ctAppRoot .imprintprivacyToolset .ctTool_imprintTool .dijitButtonText,
 .ctAppRoot .imprintprivacyToolset .ctTool_privacyStatementsTool .dijitButtonText {
     font-size: initial;
 }
