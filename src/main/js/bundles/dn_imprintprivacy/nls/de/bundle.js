@@ -14,11 +14,8 @@
  * limitations under the License.
  */
 module.exports = {
-    root: {
-        bundleName: "Domain Imprint Privacy",
-        bundleDescription: "This bundle adds two buttons to the app, which refer to the imprint and the privacy statements.",
-        imprint: "Imprint",
-        privacyStatements: "Privacy Statements"
-    },
-    de: true
+    bundleName: "Imprint Privacy",
+    bundleDescription: "Dieses Bundle f\u00fcgt zwei Buttons zur App hinzu, die auf das Impressum und die Datenschutzerkl\u00e4rung verweisen.",
+    imprint: "Impressum",
+    privacyStatements: "Datenschutzerkl\u00e4rung"
 };

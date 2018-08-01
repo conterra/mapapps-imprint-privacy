@@ -1,5 +1,5 @@
 {
-    "name": "dn_domainimprintprivacy",
+    "name": "dn_imprintprivacy",
     "version": "1.0.3-SNAPSHOT",
     "title": "${bundleName}",
     "description": "${bundleDescription}",
@@ -9,7 +9,7 @@
     ],
     "icon": {},
     "license": {},
-    "productName": "devnet-mapapps-domain-imprint-privacy",
+    "productName": "devnet-mapapps-imprint-privacy",
     "CSS-Themes-Extension": [
         {
             "name": "*",
@@ -38,7 +38,7 @@
             "references": [
                 {
                     "name": "handlerScope",
-                    "providing": "dn_domainimprintprivacy.ToolHandler"
+                    "providing": "dn_imprintprivacy.ToolHandler"
                 }
             ]
         },
@@ -61,34 +61,34 @@
             "references": [
                 {
                     "name": "handlerScope",
-                    "providing": "dn_domainimprintprivacy.ToolHandler"
+                    "providing": "dn_imprintprivacy.ToolHandler"
                 }
             ]
         },
         {
             "name": "ToolHandler",
             "provides": [
-                "dn_domainimprintprivacy.ToolHandler"
+                "dn_imprintprivacy.ToolHandler"
             ],
             "properties": {
                 "imprintUrls": [
                     {
                         "locale": "de",
-                        "url": "https://www.conterra.de/de/formales/formales/impressum"
+                        "url": ""
                     },
                     {
                         "locale": "en",
-                        "url": "https://www.conterra.de/en/formales/formales/impressum"
+                        "url": ""
                     }
                 ],
                 "privacyUrls": [
                     {
                         "locale": "de",
-                        "url": "https://www.conterra.de/de/formales/formales/datenschutzerklaerung"
+                        "url": ""
                     },
                     {
                         "locale": "en",
-                        "url": "https://www.conterra.de/en/formales/formales/datenschutzerklaerung"
+                        "url": ""
                     }
                 ],
                 "toolsetDefinition": {

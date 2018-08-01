@@ -1,13 +1,13 @@
-# Domain Imprint Privacy Bundle
+# Imprint Privacy Bundle
 This bundle adds two buttons to the app, which refer to the imprint and the privacy statements.
 
-![Screenshot App](https://github.com/conterra/mapapps-domain-imprint-privacy/blob/master/screenshot.JPG)
+![Screenshot App](https://github.com/conterra/mapapps-imprint-privacy/blob/master/screenshot.JPG)
 
 Sample App
 ------------------
-https://demos.conterra.de/mapapps/resources/apps/downloads_domainimprintprivacy/index.html
+https://demos.conterra.de/mapapps/resources/apps/downloads_imprintprivacy/index.html
 
-#### Configurable Components of dn_domainimprintprivacy:
+#### Configurable Components of dn_imprintprivacy:
 
 ##### ToolHandler:
 ```

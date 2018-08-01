@@ -35,7 +35,7 @@
             "share-link",
             "omnisearch",
             "locator-store",
-            "dn_domainimprintprivacy"
+            "dn_imprintprivacy"
         ],
         "require": [
             "${app}.app"
@@ -45,7 +45,7 @@
         ]
     },
     "bundles": {
-        "dn_domainimprintprivacy": {
+        "dn_imprintprivacy": {
             "ToolHandler": {
                 "imprintUrls": [
                     {
