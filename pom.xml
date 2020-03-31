@@ -50,35 +50,39 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
-        <!-- used for test env in jetty -->
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <!-- proxy required if wms or other services should be loaded -->
-        <dependency>
-            <groupId>de.conterra.mapapps</groupId>
-            <artifactId>ct-mapapps-proxy</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <!-- the embedded registry provides a fast way to host the js packages-->
         <dependency>
             <groupId>de.conterra.jsregistry</groupId>
             <artifactId>ct-jsregistry-embedded</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- use intern as test lib -->
+        <dependency>
+            <groupId>de.conterra.mapapps</groupId>
+            <artifactId>ct-mapapps-proxy</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- include for vue-devtools support -->
+        <dependency>
+            <groupId>org.vuejs</groupId>
+            <artifactId>vue</artifactId>
+            <classifier>dev</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>org.vuetifyjs</groupId>
+            <artifactId>vuetify</artifactId>
+            <classifier>dev</classifier>
+        </dependency>
+
+        <!-- test support libs -->
         <dependency>
             <groupId>de.conterra.jsrt</groupId>
             <artifactId>ct-jsrt-test-intern</artifactId>
-            <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>de.conterra.jsrt</groupId>
+            <artifactId>ct-jsrt-test-uitest</artifactId>
+        </dependency>
+
     </dependencies>
     <build>
         <pluginManagement>
@@ -535,7 +539,7 @@
         <netbeans.hint.jdkPlatform>JDK_1.7</netbeans.hint.jdkPlatform>
 
         <!-- JS lib versions -->
-        <mapapps.version>4.4.2</mapapps.version>
+        <mapapps.version>4.8.3</mapapps.version>
 
         <!-- Defines runtime version for the sample project. Defaults to map.apps 3.x -->
         <!-- To develope mapapps 4.x apps, change this property -->
