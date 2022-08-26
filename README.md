@@ -12,24 +12,24 @@ https://demos.conterra.de/mapapps/resources/apps/downloads_imprintprivacy/index.
 ##### ToolHandler:
 ```
 "ToolHandler": {
-    "imprintUrls": [
+   "imprintUrls": [
         {
             "locale": "de",
-            "url": "https://www.conterra.de/de/formales/formales/impressum"
+            "url": "https://www.conterra.de/impressum"
         },
         {
             "locale": "en",
-            "url": "https://www.conterra.de/en/formales/formales/impressum"
+            "url": "https://www.con-terra.com/imprint"
         }
     ],
     "privacyUrls": [
         {
             "locale": "de",
-            "url": "https://www.conterra.de/de/formales/formales/datenschutzerklaerung"
+            "url": "https://www.conterra.de/datenschutzhinweise"
         },
         {
             "locale": "en",
-            "url": "https://www.conterra.de/en/formales/formales/datenschutzerklaerung"
+            "url": "https://www.con-terra.com/privacy-statements"
         }
     ],
     "toolsetDefinition": {
