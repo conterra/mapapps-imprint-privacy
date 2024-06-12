@@ -13,11 +13,3 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-module.exports = {
-    bundleName: "Imprint Privacy",
-    bundleDescription: "Dieses Bundle f\u00fcgt zwei Buttons zur App hinzu, die auf das Impressum und die Datenschutzerkl\u00e4rung verweisen.",
-    imprint: "Impressum",
-    privacyStatements: "Datenschutzerkl\u00e4rung"
-};
-
-

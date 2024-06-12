@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 con terra GmbH (info@conterra.de)
+ * Copyright (C) 2023 con terra GmbH (info@conterra.de)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,29 +18,26 @@ import dojo from "dojo/_base/kernel";
 class ToolHandler {
 
     activate() {
-        let toolsetManager = this._toolsetManager;
-        let toolset = this._properties.toolsetDefinition;
+        const toolsetManager = this._toolsetManager;
+        const toolset = this._properties.toolsetDefinition;
         toolsetManager.addToolsetDefinition(toolset);
     }
 
     openImprint() {
-        let locale = dojo.locale;
-        let imprintUrls = this._properties.imprintUrls;
-        let imprintUrl = imprintUrls.find((url) => {
-            return url.locale === locale;
-        }).url;
+        const locale = dojo.locale;
+        const imprintUrls = this._properties.imprintUrls;
+        const imprintUrl = imprintUrls.find((url) => url.locale === locale).url;
         window.open(imprintUrl, '_blank');
     }
 
     openPrivacyStatements() {
-        let locale = dojo.locale;
-        let privacyUrls = this._properties.privacyUrls;
-        let privacyUrl = privacyUrls.find((url) => {
-            return url.locale === locale;
-        }).url;
+        const locale = dojo.locale;
+        const privacyUrls = this._properties.privacyUrls;
+        const privacyUrl = privacyUrls.find((url) => url.locale === locale).url;
         window.open(privacyUrl, '_blank');
     }
 
 }
 
 module.exports = ToolHandler;
+
