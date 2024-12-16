@@ -5,11 +5,14 @@
     "description": "${bundleDescription}",
     "vendor": "con terra GmbH",
     "keywords": [
-        "sample"
+        "imprint",
+        "privacy"
     ],
-    "icon": {},
-    "license": {},
+    "main": "",
     "productName": "devnet-mapapps-imprint-privacy",
+    "dependencies": {
+        "ct": "^4.10.0"
+    },
     "CSS-Themes-Extension": [
         {
             "name": "*",
