@@ -1,7 +1,7 @@
 # Imprint Privacy Bundle
 This bundle adds two buttons to the app, which refer to the imprint and the privacy statements.
 
-![Screenshot App](https://github.com/conterra/mapapps-imprint-privacy/blob/main/screenshot.JPG)
+![Screenshot App](https://github.com/conterra/mapapps-imprint-privacy/blob/main/screenshot.png)
 
 Sample App
 ------------------
