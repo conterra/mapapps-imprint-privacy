@@ -5,7 +5,7 @@ This bundle adds two buttons to the app, which refer to the imprint and the priv
 
 Sample App
 ------------------
-https://demos.conterra.de/mapapps/resources/apps/downloads_imprintprivacy/index.html
+https://demos.conterra.de/mapapps/resources/apps/public_demo_imprintprivacy/index.html
 
 #### Configurable Components of dn_imprintprivacy:
 
