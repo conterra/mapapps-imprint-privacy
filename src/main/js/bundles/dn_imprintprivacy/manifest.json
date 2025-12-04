@@ -11,9 +11,9 @@
     "main": "",
     "productName": "devnet-mapapps-imprint-privacy",
     "dependencies": {
-        "ct": "^4.10.0"
+        "ct": "^4.20.0"
     },
-    "CSS-Themes-Extension": [
+    "cssThemesExtension": [
         {
             "name": "*",
             "files": [
